@@ -25,16 +25,12 @@ public class Main {
 
         while (count < 9);
 
-        System.out.print(mentees.size() + "\n");
-        for (String i : mentees) {
-            System.out.print(i + "\n \n");
-        }
-
-        Collections.shuffle(mentees);
+        System.out.print("These are the names you entered \n");
         for (String i : mentees) {
             System.out.print(i + "\n");
         }
 
+        Collections.shuffle(mentees);
 
         List<String> pairOne = mentees.subList(0, 2);
         List<String> pairTwo = mentees.subList(2, 4);
@@ -42,11 +38,12 @@ public class Main {
         List<String> pairFour = mentees.subList(6, 8);
         List<String> pairFive = mentees.subList(8, 10);
 
-        System.out.print(pairOne);
-        System.out.print(pairTwo);
-        System.out.print(pairThree);
-        System.out.print(pairFour);
-        System.out.print(pairFive);
+        System.out.print("\nThis is their grouping \n");
+        System.out.print("Group 1: " + pairOne + "\n");
+        System.out.print("Group 2: " + pairTwo + "\n");
+        System.out.print("Group 3: " + pairThree + "\n");
+        System.out.print("Group 4: " + pairFour + "\n");
+        System.out.print("Group 5: " + pairFive + "\n");
 
 
 
